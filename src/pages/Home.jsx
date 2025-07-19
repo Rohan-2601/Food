@@ -9,6 +9,7 @@ import { RxCross2 } from "react-icons/rx";
 import Card2 from '../components/Card2';
 import { useSelector } from 'react-redux';
 
+
 function Home() {
   let {cate, setCate,input, showCart, setShowCart}= useContext(datacontext)
 
@@ -67,6 +68,7 @@ function Home() {
           <RxCross2 className=' w-[20px] h-[20px] text-green-500 font-bold cursor-pointer hover:text-gray-600 ' onClick={()=>setShowCart(false)}/>
 
         </header>
+       
         {items.length>0 ?<>
         <div className='w-full mt-9 flex flex-col gap-8'> 
        {items.map((item)=>(
